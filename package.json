@@ -1,0 +1,13 @@
+{
+  "name": "adventofcode-2022",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "day1": "node day1/index.js",
+    "day2": "node day2/index.js"
+  },
+  "author": "deividgp",
+  "license": "ISC"
+}
