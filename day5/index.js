@@ -35,9 +35,8 @@ splitData.forEach((element) => {
 
   for (let index = 0; index < amount; index++) {
     stackPart1[to - 1].push(stackPart1[from - 1].pop());
-    popCrates.push(stackPart2[from - 1].pop());
+    popCrates.unshift(stackPart2[from - 1].pop());
   }
-  popCrates = popCrates.reverse();
 
   popCrates.forEach((crate) => {
     stackPart2[to - 1].push(crate);
