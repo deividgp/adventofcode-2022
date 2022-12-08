@@ -15,7 +15,6 @@ const getPriority = (letter) => {
 
 // PART 1
 splitData.forEach((element) => {
-  if (element == "") return;
   const firstComp = element.slice(0, element.length / 2);
   const secondComp = element.slice(element.length / 2, element.length);
   let sharedLetter;

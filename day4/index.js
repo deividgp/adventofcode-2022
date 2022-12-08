@@ -7,7 +7,6 @@ let fullyContain = 0;
 let overlap = 0;
 
 splitData.forEach((element) => {
-  if (element == "") return;
   element.split(",").forEach((assignment, index) => {
     const splitAssign = assignment.split("-");
     const first = parseInt(splitAssign[0]);

@@ -50,7 +50,6 @@ const scorePart2 = (opponent, own) => {
 };
 
 splitData.forEach((element) => {
-  if (element == "") return;
   totalScorePart1 += scorePart1(element[0], element[2]);
   totalScorePart2 += scorePart2(element[0], element[2]);
 });

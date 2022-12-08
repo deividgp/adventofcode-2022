@@ -26,7 +26,6 @@ const stackPart2 = [
 ];
 
 splitData.forEach((element) => {
-  if (element == "") return;
   const splitStack = element.split(" ");
   const amount = parseInt(splitStack[1]);
   const from = parseInt(splitStack[3]);
