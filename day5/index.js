@@ -1,7 +1,6 @@
 import fs from "node:fs";
 
-const data = fs.readFileSync("./day5/input.txt", "utf-8");
-const splitData = data.split("\n");
+const data = fs.readFileSync("./day5/input.txt", "utf-8").split("\n");
 const stackPart1 = [
   ["G", "T", "R", "W"],
   ["G", "C", "H", "P", "M", "S", "V", "W"],
@@ -25,7 +24,7 @@ const stackPart2 = [
   ["H", "N", "W", "L", "C"],
 ];
 
-splitData.forEach((element) => {
+data.forEach((element) => {
   const splitStack = element.split(" ");
   const amount = parseInt(splitStack[1]);
   const from = parseInt(splitStack[3]);

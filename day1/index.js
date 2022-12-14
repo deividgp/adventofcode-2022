@@ -1,11 +1,10 @@
 import fs from "node:fs";
 
-const data = fs.readFileSync("./day1/input.txt", "utf-8");
-const splitData = data.split("\n");
+const data = fs.readFileSync("./day1/input.txt", "utf-8").split("\n");
 let calories = 0;
 const totalCalories = [];
 
-splitData.forEach((element) => {
+data.forEach((element) => {
   if (element != "") {
     calories += parseInt(element);
     return;

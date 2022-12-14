@@ -1,7 +1,6 @@
 import fs from "node:fs";
 
-const data = fs.readFileSync("./day2/input.txt", "utf-8");
-const splitData = data.split("\n");
+const data = fs.readFileSync("./day2/input.txt", "utf-8").split("\n");
 const letters = ["A", "B", "C"];
 const win = ["C", "A", "B"];
 const loss = ["B", "C", "A"];
@@ -49,7 +48,7 @@ const scorePart2 = (opponent, own) => {
   }
 };
 
-splitData.forEach((element) => {
+data.forEach((element) => {
   totalScorePart1 += scorePart1(element[0], element[2]);
   totalScorePart2 += scorePart2(element[0], element[2]);
 });

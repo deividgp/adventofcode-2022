@@ -1,12 +1,11 @@
 import fs from "node:fs";
 
-const data = fs.readFileSync("./day4/input.txt", "utf-8");
-const splitData = data.split("\n");
+const data = fs.readFileSync("./day4/input.txt", "utf-8").split("\n");
 let firstAux, secondAux;
 let fullyContain = 0;
 let overlap = 0;
 
-splitData.forEach((element) => {
+data.forEach((element) => {
   element.split(",").forEach((assignment, index) => {
     const splitAssign = assignment.split("-");
     const first = parseInt(splitAssign[0]);
